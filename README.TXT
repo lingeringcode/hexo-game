@@ -1,13 +1,10 @@
 ------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
+README file:
 ------------------------------------------------------------------------
 
-PROJECT TITLE: Lab6
+PROJECT TITLE: HEXO Game
 PURPOSE OF PROJECT: CSci-160
 DUE DATE: 11/04/2011
-HOW TO START THIS PROJECT: Use the BlueJ Object Bench or call the main 
-method in the RunProgram class.
+HOW TO START THIS PROJECT: Call the main method in the RunProgram class.
 AUTHOR: Chris Lindgren
 USER INSTRUCTIONS: Follow the displayed instructions.
