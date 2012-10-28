@@ -1,47 +1,54 @@
 import java.util.Random;
 
 /**
- * The HexGen class _____
+ * The HexGen class generates the 5 digit hexadecimal number for the HexoGame class.
  * 
  * @author Chris Lindgren
  * @version 1.0
  */
 public class HexGen
 {
-    public String hexoWord = "";
+    private String hexoWord;
     
     /**
      * The create method generates the random hexadecimal number.
      * 
      */
-    public String create()
+    public static String create()
     {
-        // put your code here
-        final int LENGTH = 5;
+        String hexoWord = (String) randomHex();
         
-        Random rand = new Random();
-        hexoWord = Integer.toHexString(rand.nextInt(Integer.parseInt("FFFFF", 16))).toUpperCase();
-        //int valueHex = rand.nextInt(15);
+        //initialize original hexoWord characters
+        char ch1 = hexoWord.charAt(0);
+        char ch2 = hexoWord.charAt(1);
+        char ch3 = hexoWord.charAt(2);
+        char ch4 = hexoWord.charAt(3);
+        char ch5 = hexoWord.charAt(4);
         
-//         for(int i = 0; i != LENGTH; i++)
-//         {   
-//             //generates random 5-digit hexdecimal number
-//             hexoWord = Integer.toHexString(rand.nextInt(Integer.parseInt("FFFFF", 16))).toUpperCase();
-//         }
+        while(ch1 == ch2 || ch1 == ch3 || ch1 == ch4 || ch1 == ch5 || ch2 == ch3 || ch2 == ch4 || ch2 == ch5
+        || ch3 == ch4 || ch3 == ch5 || ch4 == ch5)
+        {
+            hexoWord = randomHex();
+            ch1 = hexoWord.charAt(0);
+            ch2 = hexoWord.charAt(1);
+            ch3 = hexoWord.charAt(2);
+            ch4 = hexoWord.charAt(3);
+            ch5 = hexoWord.charAt(4);
+        }
         
-        // hex = hexoWord;
-        
-        System.out.println(hexoWord);
         return hexoWord;
      }
+    
+    /**
+    * This method overrides the Object class clone method.
+    * 
+    * @return   duplicate - this clone object of the Card object maintains encapsulation
+    */
+    public static String randomHex()
+    {
+        Random rand = new Random();
+        String hexoWord = Integer.toHexString(rand.nextInt(Integer.parseInt("FFFFF", 16))).toUpperCase();
         
-//     /**
-//     * This toHexString accessor method retrieves the suit variable for the equals method.
-//     * 
-//     * @return   hexoWord - variable representing the HexGen classes randomly generated hexadecimal number.      
-//     */
-//     public String getHex()
-//     {
-//         return hexoWord;
-//     }
+        return hexoWord;
+    }
 }
