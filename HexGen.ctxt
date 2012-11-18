@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=java.lang.String\ create()
+comment0.text=\n\ The\ create\ method\ generates\ the\ random\ hexadecimal\ number.\n\ \n
+comment1.params=
+comment1.target=java.lang.String\ randomHex()
+comment1.text=\n\ This\ method\ overrides\ the\ Object\ class\ clone\ method.\n\ \n\ @return\ \ \ duplicate\ -\ this\ clone\ object\ of\ the\ Card\ object\ maintains\ encapsulation\n
+numComments=2
