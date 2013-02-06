@@ -1,5 +1,0 @@
-#BlueJ class context
-comment0.params=
-comment0.target=void\ runHexo()
-comment0.text=\n\ The\ runHexo\ method\ uses\ the\ scanner\ to\ take\ user\ input\ and\ provide\ proper\ output\ for\ game\ feedback.\n
-numComments=1
